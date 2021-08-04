@@ -8,7 +8,7 @@ object IOIntro {
     import cats.effect.IO
 
     // 1. Чистое значение
-    val a = IO.pure(42)
+    val a: IO[Int] = IO.pure(42)
 
     // 2. Сайд-эффект
     def side = IO.delay {
